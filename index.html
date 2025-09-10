@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Final Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- css links -->
+   <link rel="stylesheet" href="style.css">
+  
+   <!-- Font Awesome (for social media icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+ <style>
+    .card {
+      min-height: 200px;
+    }
+  </style>
+  
+</head>
+<body>
+
+<!-- Sections -->
+
+<section id="home">
+ <!-- Round Image for Mobile Only -->
+<img src="pranav2.jpeg" alt="Pranav Goud" class="mobile-only-image" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out-back" data-aos-once="true" >
+
+  <div class="container text-center">
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- <a class="navbar-brand text-white" href="">MyPortfolio</a> -->
+     <img src="logo.png" class="navbar-brand text-white" style="max-width: 50px; border-radius: 10px;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon bg-light"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <div class="container-fluid hero-section">
+    <div class="row w-100">
+      <!-- Left Text -->
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-start p-5 animated-left-text">
+        <h1 class="mb-3">I am <span class="gold-text">Pranav Goud</span></h1>
+        <h4 class="mb-4">Fullstack Developer</h4>
+        <!-- <button class="contact-btn" id="contact">Contact</button> -->
+         <button class="contact-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+          Contact Us
+        </button>
+      </div>
+
+<div class="col-md-6 d-flex justify-content-center align-items-center">
+  <div class="d-flex align-items-center">
+    <!-- Image -->
+    <img src="pranav.jpeg" alt="Example" class="right-image" class="right-image img-fluid me-4" style="max-width: 300px; border-radius: 10px;">
+
+    <!-- Social Icons -->
+    <div class="social-icons d-flex flex-column" id="social-icons">
+  <a href="https://github.com/" class="text-white mb-3"><i class="fab fa-github fa-lg"></i></a>
+  <a href="https://www.linkedin.com/in/pranav-goud-aa27752b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-white mb-3"><i class="fab fa-linkedin fa-lg"></i></a>
+  <a href="#" class="text-white mb-3"><i class="fab fa-twitter fa-lg"></i></a>
+  <a href="https://www.instagram.com/pranavgoud3112?igsh=MXRoYXdsaGZja2dsZA==" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+</div>
+
+
+  </div>
+</div>
+  </div> 
+  <!-- #033631
+  #bf9b42 -->
+  </div>
+
+</section>
+
+<section id="about">
+  <div class="container text-center">
+    <h2 style="color: gold;"><B>About Me</B></h2>
+    <p style="font-size: 20px;">A strong foundation in software engineering. Proficient in C, HTML, Python and DBMS. 
+      Seeking raise with coding error free and efficient programs. Ability in business problem solution with IT technology. 
+      Looking to start a career as an entry-level professional with a IT company.</p>
+  </div>
+</section>
+
+<!-- Skills Carousel -->
+<section id="skills" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-5 text-warning fw-bold">My Skills</h2>
+
+    <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center g-4">
+            <div class="col-md-4 col-lg-3">
+              <div class="card text-center bg-dark text-white border-0 shadow-lg">
+                <div class="card-body">
+                  <i class="fab fa-html5 fa-3x mb-3 text-warning"></i>
+                  <h5 class="card-title">HTML</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <div class="card text-center bg-dark text-white border-0 shadow-lg">
+                <div class="card-body">
+                  <i class="fab fa-css3-alt fa-3x mb-3 text-info"></i>
+                  <h5 class="card-title">CSS</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <div class="card text-center bg-dark text-white border-0 shadow-lg">
+                <div class="card-body">
+                  <i class="fab fa-js-square fa-3x mb-3 text-warning"></i>
+                  <h5 class="card-title">JavaScript</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center g-4">
+            <div class="col-md-4 col-lg-3">
+              <div class="card text-center bg-dark text-white border-0 shadow-lg">
+                <div class="card-body">
+                  <i class="fab fa-bootstrap fa-3x mb-3" style="color: #7952b3;"></i>
+                  <h5 class="card-title">Bootstrap</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <div class="card text-center bg-dark text-white border-0 shadow-lg">
+                <div class="card-body">
+                  <i class="fab fa-python fa-3x mb-3 text-danger"></i>
+                  <h5 class="card-title">Python</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <div class="card text-center bg-dark text-white border-0 shadow-lg">
+                <div class="card-body">
+                  <i class="fas fa-database fa-3x mb-3 text-light"></i>
+                  <h5 class="card-title">MySQL</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+<h2 class="section-heading" data-aos="zoom-in" style="color: gold;">Education</h2>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card shadow p-3">
+          <h5 class="card-title">SSC</h5>
+          <p class="card-text">New English Medium School, Murgud, Kolhapur. <br>
+            06/2018–03/2019<br>
+            Completed SSC board with 73.40%.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card shadow p-3">
+          <h5 class="card-title">HSC</h5>
+          <p class="card-text"> P B Patil Jr college, Mudal, Kolhapur.<br>
+            06/2020-02/2021 <br>
+            In the higher secondary I score 81.67 percentage.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card shadow p-3">
+          <h5 class="card-title">BCA </h5>
+          <p class="card-text">Bachelor of Computer Applications (BCA)
+            Shri Shahaji Chhatrapati Mahavidyalaya, Kolhapur
+            June 2021 – March 2024
+            Percentage: 83%.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<!-- Projects Carousel -->
+<section id="projects" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-5 text-warning fw-bold">Projects</h2>
+    
+    <!-- g-4 adds spacing between columns -->
+    <div class="row justify-content-center g-4">  
+
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card project-card bg-dark text-white shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title">Billing Software</h5>
+            <p class="card-text"><b>Technology:</b> <br>Python and MySQL.</br></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card project-card bg-dark text-white shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title">Calculator</h5>
+            <p class="card-text"><b>Technology:</b> <br>Python.</br></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<style>
+  /* Add smooth hover effect */
+  .project-card {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+  }
+
+  /* When card "wakes up" (hover) */
+  .project-card:hover {
+    transform: translateY(-10px) scale(1.02); /* lift + slight zoom */
+    border-color: gold; /* gold border */
+    background: linear-gradient(135deg, #000000, #1a1a1a); /* stylish black gradient */
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5); /* glowing gold shadow */
+  }
+
+  .project-card:hover .card-title {
+    color: gold; /* highlight title on hover */
+  }
+</style>
+
+
+<!-- <section id="contact" style=" padding: 40px 0; background-color: #121212;">
+  <div class="container text-center">
+    <h2 class="mb-5 text-warning"><B>Contact Me</B></h2>
+    <div class="row justify-content-center g-4"> -->
+
+      <!-- Email Card -->
+      <!-- <div class="col-sm-6 col-md-4">
+        <div class="card contact-card bg-dark text-gold shadow-sm animate-card">
+          <div class="card-body">
+            <i class="fas fa-envelope fa-2x mb-2"></i>
+            <h6 class="card-title">Email</h6>
+            <p class="card-text small">
+              <a href="pranavgoud3112@email.com" class="text-decoration-none text-gold">
+                pranavgoud3112@email.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Phone Card -->
+      <!-- <div class="col-sm-6 col-md-4">
+        <div class="card contact-card bg-dark text-gold shadow-sm animate-card" style="animation-delay: 0.1s;">
+          <div class="card-body">
+            <i class="fas fa-phone fa-2x mb-2"></i>
+            <h6 class="card-title">Phone</h6>
+            <p class="card-text small">+919921093112</p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Address Card -->
+      <!-- <div class="col-sm-6 col-md-4">
+        <div class="card contact-card bg-dark text-gold shadow-sm animate-card" style="animation-delay: 0.2s;">
+          <div class="card-body">
+            <i class="fas fa-map-marker-alt fa-2x mb-2"></i>
+            <h6 class="card-title">Address</h6>
+            <p class="card-text small">Kolhapur, Maharashtra, India.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section> -->
+<section id="contact">
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="from_name" placeholder="Your Name" required />
+      <input type="email" name="from_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="status" id="status-message"></div>
+  </div>
+
+  <!-- EmailJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("zyQLB2OVFj6ckjHkL"); // 👈 Replace with your actual public key
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const statusMsg = document.getElementById("status-message");
+      statusMsg.innerText = "Sending...";
+
+      emailjs.sendForm("service_rf5nooq", "template_3cdnirl", this)
+        .then(() => {
+          statusMsg.style.color = "green";
+          statusMsg.innerText = "Message sent successfully!";
+          this.reset();
+        }, (error) => {
+          statusMsg.style.color = "red";
+          statusMsg.innerText = "Failed to send message. Please try again.";
+          console.error(error);
+        });
+    });
+  </script>
+</section>
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var skillsCarousel = document.querySelector('#skillsCarousel');
+    var projectsCarousel = document.querySelector('#projectsCarousel');
+
+    var skillsInstance = bootstrap.Carousel.getOrCreateInstance(skillsCarousel);
+    var projectsInstance = bootstrap.Carousel.getOrCreateInstance(projectsCarousel);
+
+    skillsInstance.cycle();
+    projectsInstance.cycle();
+  });
+
+
+</script>
+
+<script>
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      
+      if (navbarToggler.offsetParent !== null && navbarCollapse.classList.contains('show')) {
+        navbarToggler.click(); // This will close the menu
+      }
+    });
+  });
+</script>
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+
+ 
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+
+</body>
+</html>
